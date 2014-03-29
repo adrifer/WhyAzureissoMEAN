@@ -4,7 +4,7 @@ var express = require('express');
 var mongoskin = require('mongoskin');
 
 // Inicializamos la base de datos
-var db = mongoskin.db("//CONNECTIONSTRING", {safe: true})
+var db = mongoskin.db("//CONNECTIONSTRING ", {safe: true})
 db.bind("Series");
 
 //Inicializamos el servidor
