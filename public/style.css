@@ -1,0 +1,162 @@
+.nav, .pagination, .carousel, .panel-title a { cursor: pointer; }
+
+body{
+	background-color: #428bca;
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+	color: black;
+}
+
+#navbar {
+	height: 60px;
+	border-bottom: 2px solid black;
+}
+
+#navbar .navbar-header {
+	margin-top: 10px;
+}
+
+.page-control {
+	padding-top: 60px;
+	padding-bottom: 50px;
+}
+
+.first-serie {
+	height: 640px;
+	max-width: 435px;
+}
+
+.serie-container {
+	margin-top: 44px;
+}
+
+.serie-container .serie {
+	height: 320px;
+	max-width: 217px;
+}
+
+.seasons-counter {
+	position: absolute;
+}
+
+.first-serie .seasons-counter {
+	bottom: 8px;
+	right: 40px;
+	height: 40px;
+}
+
+.serie .seasons-counter {
+	bottom: 10px;
+	right: 20px;
+	height: 20px;
+}
+
+.seasons-counter .seasons-count-badge {
+	background-color: #428bca;
+	height: 100%;
+	width: auto;
+ }
+ 
+.first-serie .seasons-counter .seasons-count-badge {
+	padding-top: 10px;
+	font-size: 16pt;
+ }
+
+.serie .seasons-counter .seasons-count-badge {
+	padding-top: 5px;
+	font-size: 8pt;
+ }
+
+.serie-container .serie > img,
+.first-serie > img,
+.serie-header-container > img {
+	height: auto;
+	width: 100%;
+}
+
+.serie-header-container {
+	height: 100%;
+	width: 100%;
+}
+
+.serie-header-container .serie-title {
+	position: absolute;
+	bottom: 20%;
+	right: 10%;
+	width: 70%;
+	height: 70px;
+	background-color: #428bca;
+	color: white;
+	padding: 16px;
+	text-align: right;
+}
+
+.serie-header-container .serie-sub {
+	position: absolute;
+	bottom: 0;
+	right: 10%;
+	width: 58%;
+	height: 20%;
+	background-color: rgba(0,0,0,0.61);
+	text-align: right;
+	padding: 12px;
+	color: white;
+}
+
+.serie-header-container .serie-poster {
+	position: absolute;
+	bottom: 0;
+	left: 12%;
+	width: 20%;
+	height: 50%;
+	margin: 10px;
+	border: 3px solid black;
+}
+
+.serie-separator {
+	height: 80px;
+	background-color: #4e5d6c;
+	left: 15px;
+	color: white;
+}
+
+.season-container {
+	margin-bottom: 24px;
+}
+
+.season-container > img {
+	width: 100%;
+	height: auto;
+}
+
+.season-container .episodes-counter {
+	position: absolute;
+	top: 10px;
+	right: 30px;
+}
+
+
+.season-container .episodes-counter .episodes-count-badge {
+	padding-top: 10px;
+	font-size: 24pt;
+	background-color: #428bca;
+	height: 100%;
+	width: auto;
+ }
+ 
+.powered-wrapper {
+	 height: 60px;
+	 opacity: 0.61;
+	 color: white;
+ }
+ 
+ .powered-wrapper .powered-logo,
+ .powered-wrapper:hover .powered-logo {
+	 height: 60px;
+	 width: auto;
+ }
+ 
+ .powered-wrapper:hover {
+	 height: 60;
+	 opacity: 1;
+	 color: white;
+ }

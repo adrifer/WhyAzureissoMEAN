@@ -1,0 +1,19 @@
+<div class="serie-header-container col-xs-12 col-sm-12 col-md-12 col-lg-12" ng-show="serie">
+	<img ng-src="{{serie.images.fanart}}"></img>
+	<h1 class="serie-title">{{serie.name}}</h1>
+	<h5 class="serie-sub">{{serie.overview}}</h5>
+	<img class="serie-poster" ng-src="{{serie.images.poster}}"></img>
+</div>
+<div class="serie-separator row col-xs-12 col-sm-12 col-md-12 col-lg-12">
+	<h2>Season list:</h2>
+</div>
+<div row class="serie-seasonlist-container">
+	<div ng-repeat="season in serie.seasons" ng-show="serie">
+		<div class="season-container col-xs-6 col-sm-6 col-md-4 col-lg-4">
+			<div class="episodes-counter">
+				<span class="badge episodes-count-badge">{{season.episodes.length}}</span>
+			</div>
+			<img ng-src="{{season.poster}}"></img>
+		</div>
+	</div>
+</div>

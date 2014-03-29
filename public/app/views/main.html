@@ -1,0 +1,22 @@
+<div class="row" ng-show="seriesList">
+	<div class="col-xs-10 col-xs-offset-1 col-sm-10 col-sm-offset-1 col-md-6 col-md-offset-0 col-lg-6 col-lg-offset-0">
+		<a class="first-serie" ng-href="/#/serie/{{firstSerie._id}}">
+			<div class="seasons-counter">
+				<span class="badge seasons-count-badge">{{firstSerie.seasons.length}} seasons</span>
+			</div>
+			<img ng-src="{{firstSerie.images.poster}}"></img>
+		</a>
+	</div>
+	<div class="col-xs-10 col-xs-offset-1 col-sm-10 col-sm-offset-1 col-md-6 col-md-offset-0 col-lg-6 col-lg-offset-0">
+		<div ng-repeat="serie in seriesList">
+			<div class="serie-container col-xs-4 col-sm-4 col-md-4 col-lg-4">
+				<a class="serie" ng-href="/#/serie/{{serie._id}}">
+					<div class="seasons-counter">
+						<span class="badge seasons-count-badge">{{serie.seasons.length}} <span class="hidden-xs">seasons</span></span>
+					</div>
+					<img ng-src="{{serie.images.poster}}"></img>
+				</a>
+			</div>
+		</div>
+	</div>
+</div>

@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="es" ng-app="AzureMEAN">
+    
+    <head>
+        <meta charset="utf-8">
+        <title>Why AZURE is so MEAN</title>
+        <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">
+        <link href="//netdna.bootstrapcdn.com/bootswatch/3.1.1/superhero/bootstrap.min.css" rel="stylesheet">
+        <link rel="stylesheet" href="style.css">
+    </head>
+    
+    <body>
+        <div id="navbar" class="navbar navbar-default navbar-fixed-top" role="navigation">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <a class="navbar-brand" ng-href="/#/">
+                        <span>Why Azure is so MEAN?</span>
+                    </a>
+                </div>
+                <div class="navbar-right powered-wrapper">
+                    <span>powered by</span>
+                    <a ng-href="https://trackseriesdev.azurewebsites.net" target="_blank">
+                        <img class="powered-logo" src="ts-logo.png"></img>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="page-control" ng-view=""></div>
+        </div>
+        <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.2.14/angular.min.js"></script>
+        <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.2.14/angular-route.min.js"></script>
+        <script src="//cdnjs.cloudflare.com/ajax/libs/angular-ui-bootstrap/0.10.0/ui-bootstrap-tpls.js"></script>
+        <script src="app/app.js"></script>
+        <script src="app/controllers.js"></script>
+    </body>
+
+</html>
