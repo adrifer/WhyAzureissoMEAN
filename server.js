@@ -4,7 +4,7 @@ var express = require('express');
 var mongoskin = require('mongoskin');
 
 // Inicializamos la base de datos
-var db = mongoskin.db("mongodb://WhyAzureIsSoMean-Dec:jWSu.ILPAP9qkF9odRsi.2m8Pss.jEC3pY1_TgCKfXI-@ds035747.mongolab.com:35747/WhyAzureIsSoMean-Dec", {safe: true})
+var db = mongoskin.db("//CONNECTIONSTRING", {safe: true})
 db.bind("Series");
 
 //Inicializamos el servidor
